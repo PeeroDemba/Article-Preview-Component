@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(210deg, 46%, 95%);
+  overflow: hidden;
+  padding: 13rem 0;
+  font-family: "Manrope", sans-serif;
+}
+
+i {
+  color: white;
+  padding-left: 0.5rem;
+}
+
+img {
+  width: 100%;
+}
+
+img.small {
+  width: 2rem;
+}
+
+.share {
+  padding: 0.45rem 0.45rem 0.45rem 0.45rem;
+  border-radius: 50%;
+  background-color: hsl(210deg, 46%, 95%);
+  position: relative;
+}
+.share img {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+.col {
+  padding: 0.25rem 0.45rem 0.25rem 0;
+  border-radius: 50%;
+  background-color: hsl(216deg, 10%, 49%);
+  position: relative;
+}
+.col img {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+main.container {
+  max-width: 45rem;
+  min-height: 15rem;
+  display: grid;
+  grid-template-columns: 2.5fr 4fr;
+  background-color: white;
+  margin: auto;
+  border-radius: 0.6rem;
+}
+main.container .image {
+  background-image: url(./images/drawers.jpg);
+  background-position: -1.2rem center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-left-radius: 0.6rem;
+  border-bottom-left-radius: 0.6rem;
+}
+main.container .text {
+  padding: 1.5rem;
+  position: relative;
+}
+main.container .text h2 {
+  margin-bottom: 0.5rem;
+}
+main.container .text p {
+  margin-bottom: 0.5rem;
+}
+main.container .text .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main.container .text .flex img {
+  border-radius: 50%;
+}
+main.container .text .flex .names {
+  margin-right: 10rem;
+  margin-top: 0.5rem;
+}
+main.container .text > #icons {
+  position: absolute;
+  top: 8.7rem;
+  left: 18.5rem;
+  height: 3.5rem;
+  width: 13rem;
+  background-color: hsl(217deg, 19%, 35%);
+  border-radius: 0.6rem;
+  padding-top: 1rem;
+  text-align: center;
+  box-shadow: 0.3rem 0.3rem 0.6rem 0.3rem #f4f4f4;
+}
+main.container .text > #icons h4 {
+  display: inline-block;
+  color: white;
+  margin-right: 0.5rem;
+}
+main.container .text > #icons a img {
+  width: 1rem;
+}
+main.container .text > #icons p {
+  position: absolute;
+  background-color: white;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-width: 0.6rem 0.75rem 0rem 0.75rem;
+  border-color: hsl(217deg, 19%, 35%) transparent transparent transparent;
+  border-style: solid;
+  left: 6rem;
+  top: 3.5rem;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+footer.attribution {
+  font-size: 0.6rem;
+  text-align: center;
+}
+footer.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+@media (max-width: 649px) {
+  body {
+    overflow: scroll;
+  }
+  .share {
+    padding: 0.45rem 0.45rem 0.45rem 0.45rem;
+    border-radius: 50%;
+    background-color: hsl(210deg, 46%, 95%);
+    position: relative;
+  }
+  .share img {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+  .col {
+    padding: 0.25rem 0.45rem 0.25rem 0;
+    border-radius: 50%;
+    background-color: hsl(216deg, 10%, 49%);
+    position: relative;
+    z-index: 2;
+  }
+  .col img {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+  main.container {
+    max-width: 20rem;
+    min-height: 20rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 2.5fr;
+    background-color: white;
+    margin: auto;
+    margin-top: 6rem;
+    border-radius: 0.6rem;
+  }
+  main.container .image {
+    background-image: url(./images/drawers.jpg);
+    background-position: center center;
+    background-size: 20rem;
+    background-repeat: no-repeat;
+    border-top-left-radius: 0.6rem;
+    border-top-right-radius: 0.6rem;
+    border-bottom-left-radius: 0;
+  }
+  main.container .text {
+    padding: 1.5rem;
+    padding-bottom: 0;
+    position: relative;
+  }
+  main.container .text .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  main.container .text .flex img {
+    border-radius: 50%;
+  }
+  main.container .text .flex .names {
+    margin-right: 4.5rem;
+    margin-top: 0.5rem;
+  }
+  main.container .text > #icons {
+    position: absolute;
+    top: 20.1rem;
+    left: 0rem;
+    height: 3.5rem;
+    width: 20rem;
+    background-color: hsl(217deg, 19%, 35%);
+    border-radius: 0;
+    border-bottom-left-radius: 0.6rem;
+    border-bottom-right-radius: 0.6rem;
+    padding-top: 1rem;
+    text-align: center;
+    box-shadow: 0rem 0rem 0rem 0rem #f4f4f4;
+  }
+  main.container .text > #icons h4 {
+    display: inline-block;
+    margin-left: -5rem;
+    color: white;
+  }
+  main.container .text > #icons a img {
+    width: 1rem;
+  }
+  main.container .text > #icons p {
+    display: none;
+  }
+}
